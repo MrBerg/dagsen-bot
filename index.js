@@ -126,6 +126,11 @@ tg.on('message', function(msg) {
       text: 'Spela trivia nu: https://telegram.me/joinchat/AXjh-gBgic0Dnbj_-uzMxg',
       chat_id: msg.chat.id
     });
+  } else if (!msg.text.indexOf('/ylonz')) {
+    tg.sendMessage({
+      text: 'Snart är det YLONZ!',
+      chat_id: msg.chat.id
+    });
   }
 });
 
